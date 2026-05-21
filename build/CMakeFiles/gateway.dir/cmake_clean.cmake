@@ -1,0 +1,38 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/gateway.dir/link.d"
+  "CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o"
+  "CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o.d"
+  "CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o"
+  "CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o.d"
+  "CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o"
+  "CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o.d"
+  "CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o"
+  "CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o.d"
+  "CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o"
+  "CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o.d"
+  "CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o"
+  "CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o.d"
+  "CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o"
+  "CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o.d"
+  "CMakeFiles/gateway.dir/gateway/src/router.cpp.o"
+  "CMakeFiles/gateway.dir/gateway/src/router.cpp.o.d"
+  "CMakeFiles/gateway.dir/src/main_gateway.cpp.o"
+  "CMakeFiles/gateway.dir/src/main_gateway.cpp.o.d"
+  "CMakeFiles/gateway.dir/src/net/acceptor.cpp.o"
+  "CMakeFiles/gateway.dir/src/net/acceptor.cpp.o.d"
+  "CMakeFiles/gateway.dir/src/net/channel.cpp.o"
+  "CMakeFiles/gateway.dir/src/net/channel.cpp.o.d"
+  "CMakeFiles/gateway.dir/src/net/eventloop.cpp.o"
+  "CMakeFiles/gateway.dir/src/net/eventloop.cpp.o.d"
+  "CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o"
+  "CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o.d"
+  "CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o"
+  "CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o.d"
+  "gateway"
+  "gateway.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/gateway.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

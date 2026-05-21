@@ -117,48 +117,240 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lfserver
+# Target rules for targets named gateway
 
 # Build rule for target.
-lfserver: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lfserver
-.PHONY : lfserver
+gateway: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gateway
+.PHONY : gateway
 
 # fast build rule for target.
-lfserver/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/build
-.PHONY : lfserver/fast
+gateway/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/build
+.PHONY : gateway/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+gateway/src/auth_plugin.o: gateway/src/auth_plugin.cpp.o
+.PHONY : gateway/src/auth_plugin.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+gateway/src/auth_plugin.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o
+.PHONY : gateway/src/auth_plugin.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+gateway/src/auth_plugin.i: gateway/src/auth_plugin.cpp.i
+.PHONY : gateway/src/auth_plugin.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+gateway/src/auth_plugin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.i
+.PHONY : gateway/src/auth_plugin.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+gateway/src/auth_plugin.s: gateway/src/auth_plugin.cpp.s
+.PHONY : gateway/src/auth_plugin.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+gateway/src/auth_plugin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.s
+.PHONY : gateway/src/auth_plugin.cpp.s
+
+gateway/src/gateway.o: gateway/src/gateway.cpp.o
+.PHONY : gateway/src/gateway.o
+
+# target to build an object file
+gateway/src/gateway.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o
+.PHONY : gateway/src/gateway.cpp.o
+
+gateway/src/gateway.i: gateway/src/gateway.cpp.i
+.PHONY : gateway/src/gateway.i
+
+# target to preprocess a source file
+gateway/src/gateway.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/gateway.cpp.i
+.PHONY : gateway/src/gateway.cpp.i
+
+gateway/src/gateway.s: gateway/src/gateway.cpp.s
+.PHONY : gateway/src/gateway.s
+
+# target to generate assembly for a file
+gateway/src/gateway.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/gateway.cpp.s
+.PHONY : gateway/src/gateway.cpp.s
+
+gateway/src/log_consumer.o: gateway/src/log_consumer.cpp.o
+.PHONY : gateway/src/log_consumer.o
+
+# target to build an object file
+gateway/src/log_consumer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o
+.PHONY : gateway/src/log_consumer.cpp.o
+
+gateway/src/log_consumer.i: gateway/src/log_consumer.cpp.i
+.PHONY : gateway/src/log_consumer.i
+
+# target to preprocess a source file
+gateway/src/log_consumer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.i
+.PHONY : gateway/src/log_consumer.cpp.i
+
+gateway/src/log_consumer.s: gateway/src/log_consumer.cpp.s
+.PHONY : gateway/src/log_consumer.s
+
+# target to generate assembly for a file
+gateway/src/log_consumer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.s
+.PHONY : gateway/src/log_consumer.cpp.s
+
+gateway/src/mgmt_handler.o: gateway/src/mgmt_handler.cpp.o
+.PHONY : gateway/src/mgmt_handler.o
+
+# target to build an object file
+gateway/src/mgmt_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o
+.PHONY : gateway/src/mgmt_handler.cpp.o
+
+gateway/src/mgmt_handler.i: gateway/src/mgmt_handler.cpp.i
+.PHONY : gateway/src/mgmt_handler.i
+
+# target to preprocess a source file
+gateway/src/mgmt_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.i
+.PHONY : gateway/src/mgmt_handler.cpp.i
+
+gateway/src/mgmt_handler.s: gateway/src/mgmt_handler.cpp.s
+.PHONY : gateway/src/mgmt_handler.s
+
+# target to generate assembly for a file
+gateway/src/mgmt_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.s
+.PHONY : gateway/src/mgmt_handler.cpp.s
+
+gateway/src/mysql_pool.o: gateway/src/mysql_pool.cpp.o
+.PHONY : gateway/src/mysql_pool.o
+
+# target to build an object file
+gateway/src/mysql_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o
+.PHONY : gateway/src/mysql_pool.cpp.o
+
+gateway/src/mysql_pool.i: gateway/src/mysql_pool.cpp.i
+.PHONY : gateway/src/mysql_pool.i
+
+# target to preprocess a source file
+gateway/src/mysql_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.i
+.PHONY : gateway/src/mysql_pool.cpp.i
+
+gateway/src/mysql_pool.s: gateway/src/mysql_pool.cpp.s
+.PHONY : gateway/src/mysql_pool.s
+
+# target to generate assembly for a file
+gateway/src/mysql_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.s
+.PHONY : gateway/src/mysql_pool.cpp.s
+
+gateway/src/ratelimit_plugin.o: gateway/src/ratelimit_plugin.cpp.o
+.PHONY : gateway/src/ratelimit_plugin.o
+
+# target to build an object file
+gateway/src/ratelimit_plugin.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o
+.PHONY : gateway/src/ratelimit_plugin.cpp.o
+
+gateway/src/ratelimit_plugin.i: gateway/src/ratelimit_plugin.cpp.i
+.PHONY : gateway/src/ratelimit_plugin.i
+
+# target to preprocess a source file
+gateway/src/ratelimit_plugin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.i
+.PHONY : gateway/src/ratelimit_plugin.cpp.i
+
+gateway/src/ratelimit_plugin.s: gateway/src/ratelimit_plugin.cpp.s
+.PHONY : gateway/src/ratelimit_plugin.s
+
+# target to generate assembly for a file
+gateway/src/ratelimit_plugin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.s
+.PHONY : gateway/src/ratelimit_plugin.cpp.s
+
+gateway/src/redis_client.o: gateway/src/redis_client.cpp.o
+.PHONY : gateway/src/redis_client.o
+
+# target to build an object file
+gateway/src/redis_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o
+.PHONY : gateway/src/redis_client.cpp.o
+
+gateway/src/redis_client.i: gateway/src/redis_client.cpp.i
+.PHONY : gateway/src/redis_client.i
+
+# target to preprocess a source file
+gateway/src/redis_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.i
+.PHONY : gateway/src/redis_client.cpp.i
+
+gateway/src/redis_client.s: gateway/src/redis_client.cpp.s
+.PHONY : gateway/src/redis_client.s
+
+# target to generate assembly for a file
+gateway/src/redis_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.s
+.PHONY : gateway/src/redis_client.cpp.s
+
+gateway/src/router.o: gateway/src/router.cpp.o
+.PHONY : gateway/src/router.o
+
+# target to build an object file
+gateway/src/router.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/router.cpp.o
+.PHONY : gateway/src/router.cpp.o
+
+gateway/src/router.i: gateway/src/router.cpp.i
+.PHONY : gateway/src/router.i
+
+# target to preprocess a source file
+gateway/src/router.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/router.cpp.i
+.PHONY : gateway/src/router.cpp.i
+
+gateway/src/router.s: gateway/src/router.cpp.s
+.PHONY : gateway/src/router.s
+
+# target to generate assembly for a file
+gateway/src/router.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/router.cpp.s
+.PHONY : gateway/src/router.cpp.s
+
+src/main_gateway.o: src/main_gateway.cpp.o
+.PHONY : src/main_gateway.o
+
+# target to build an object file
+src/main_gateway.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/main_gateway.cpp.o
+.PHONY : src/main_gateway.cpp.o
+
+src/main_gateway.i: src/main_gateway.cpp.i
+.PHONY : src/main_gateway.i
+
+# target to preprocess a source file
+src/main_gateway.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/main_gateway.cpp.i
+.PHONY : src/main_gateway.cpp.i
+
+src/main_gateway.s: src/main_gateway.cpp.s
+.PHONY : src/main_gateway.s
+
+# target to generate assembly for a file
+src/main_gateway.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/main_gateway.cpp.s
+.PHONY : src/main_gateway.cpp.s
 
 src/net/acceptor.o: src/net/acceptor.cpp.o
 .PHONY : src/net/acceptor.o
 
 # target to build an object file
 src/net/acceptor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/acceptor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/acceptor.cpp.o
 .PHONY : src/net/acceptor.cpp.o
 
 src/net/acceptor.i: src/net/acceptor.cpp.i
@@ -166,7 +358,7 @@ src/net/acceptor.i: src/net/acceptor.cpp.i
 
 # target to preprocess a source file
 src/net/acceptor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/acceptor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/acceptor.cpp.i
 .PHONY : src/net/acceptor.cpp.i
 
 src/net/acceptor.s: src/net/acceptor.cpp.s
@@ -174,7 +366,7 @@ src/net/acceptor.s: src/net/acceptor.cpp.s
 
 # target to generate assembly for a file
 src/net/acceptor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/acceptor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/acceptor.cpp.s
 .PHONY : src/net/acceptor.cpp.s
 
 src/net/channel.o: src/net/channel.cpp.o
@@ -182,7 +374,7 @@ src/net/channel.o: src/net/channel.cpp.o
 
 # target to build an object file
 src/net/channel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/channel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/channel.cpp.o
 .PHONY : src/net/channel.cpp.o
 
 src/net/channel.i: src/net/channel.cpp.i
@@ -190,7 +382,7 @@ src/net/channel.i: src/net/channel.cpp.i
 
 # target to preprocess a source file
 src/net/channel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/channel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/channel.cpp.i
 .PHONY : src/net/channel.cpp.i
 
 src/net/channel.s: src/net/channel.cpp.s
@@ -198,7 +390,7 @@ src/net/channel.s: src/net/channel.cpp.s
 
 # target to generate assembly for a file
 src/net/channel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/channel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/channel.cpp.s
 .PHONY : src/net/channel.cpp.s
 
 src/net/eventloop.o: src/net/eventloop.cpp.o
@@ -206,7 +398,7 @@ src/net/eventloop.o: src/net/eventloop.cpp.o
 
 # target to build an object file
 src/net/eventloop.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/eventloop.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/eventloop.cpp.o
 .PHONY : src/net/eventloop.cpp.o
 
 src/net/eventloop.i: src/net/eventloop.cpp.i
@@ -214,7 +406,7 @@ src/net/eventloop.i: src/net/eventloop.cpp.i
 
 # target to preprocess a source file
 src/net/eventloop.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/eventloop.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/eventloop.cpp.i
 .PHONY : src/net/eventloop.cpp.i
 
 src/net/eventloop.s: src/net/eventloop.cpp.s
@@ -222,7 +414,7 @@ src/net/eventloop.s: src/net/eventloop.cpp.s
 
 # target to generate assembly for a file
 src/net/eventloop.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/eventloop.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/eventloop.cpp.s
 .PHONY : src/net/eventloop.cpp.s
 
 src/net/tcp_connection.o: src/net/tcp_connection.cpp.o
@@ -230,7 +422,7 @@ src/net/tcp_connection.o: src/net/tcp_connection.cpp.o
 
 # target to build an object file
 src/net/tcp_connection.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/tcp_connection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o
 .PHONY : src/net/tcp_connection.cpp.o
 
 src/net/tcp_connection.i: src/net/tcp_connection.cpp.i
@@ -238,7 +430,7 @@ src/net/tcp_connection.i: src/net/tcp_connection.cpp.i
 
 # target to preprocess a source file
 src/net/tcp_connection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/tcp_connection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.i
 .PHONY : src/net/tcp_connection.cpp.i
 
 src/net/tcp_connection.s: src/net/tcp_connection.cpp.s
@@ -246,7 +438,7 @@ src/net/tcp_connection.s: src/net/tcp_connection.cpp.s
 
 # target to generate assembly for a file
 src/net/tcp_connection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/tcp_connection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.s
 .PHONY : src/net/tcp_connection.cpp.s
 
 src/net/tcp_server.o: src/net/tcp_server.cpp.o
@@ -254,7 +446,7 @@ src/net/tcp_server.o: src/net/tcp_server.cpp.o
 
 # target to build an object file
 src/net/tcp_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/tcp_server.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o
 .PHONY : src/net/tcp_server.cpp.o
 
 src/net/tcp_server.i: src/net/tcp_server.cpp.i
@@ -262,7 +454,7 @@ src/net/tcp_server.i: src/net/tcp_server.cpp.i
 
 # target to preprocess a source file
 src/net/tcp_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/tcp_server.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/tcp_server.cpp.i
 .PHONY : src/net/tcp_server.cpp.i
 
 src/net/tcp_server.s: src/net/tcp_server.cpp.s
@@ -270,7 +462,7 @@ src/net/tcp_server.s: src/net/tcp_server.cpp.s
 
 # target to generate assembly for a file
 src/net/tcp_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/src/net/tcp_server.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/net/tcp_server.cpp.s
 .PHONY : src/net/tcp_server.cpp.s
 
 # Help Target
@@ -281,10 +473,34 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lfserver"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... gateway"
+	@echo "... gateway/src/auth_plugin.o"
+	@echo "... gateway/src/auth_plugin.i"
+	@echo "... gateway/src/auth_plugin.s"
+	@echo "... gateway/src/gateway.o"
+	@echo "... gateway/src/gateway.i"
+	@echo "... gateway/src/gateway.s"
+	@echo "... gateway/src/log_consumer.o"
+	@echo "... gateway/src/log_consumer.i"
+	@echo "... gateway/src/log_consumer.s"
+	@echo "... gateway/src/mgmt_handler.o"
+	@echo "... gateway/src/mgmt_handler.i"
+	@echo "... gateway/src/mgmt_handler.s"
+	@echo "... gateway/src/mysql_pool.o"
+	@echo "... gateway/src/mysql_pool.i"
+	@echo "... gateway/src/mysql_pool.s"
+	@echo "... gateway/src/ratelimit_plugin.o"
+	@echo "... gateway/src/ratelimit_plugin.i"
+	@echo "... gateway/src/ratelimit_plugin.s"
+	@echo "... gateway/src/redis_client.o"
+	@echo "... gateway/src/redis_client.i"
+	@echo "... gateway/src/redis_client.s"
+	@echo "... gateway/src/router.o"
+	@echo "... gateway/src/router.i"
+	@echo "... gateway/src/router.s"
+	@echo "... src/main_gateway.o"
+	@echo "... src/main_gateway.i"
+	@echo "... src/main_gateway.s"
 	@echo "... src/net/acceptor.o"
 	@echo "... src/net/acceptor.i"
 	@echo "... src/net/acceptor.s"

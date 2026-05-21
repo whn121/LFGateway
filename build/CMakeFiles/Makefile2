@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /home/whn/LFServer/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lfserver.dir/all
+all: CMakeFiles/gateway.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/lfserver.dir/codegen
+codegen: CMakeFiles/gateway.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lfserver.dir/clean
+clean: CMakeFiles/gateway.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lfserver.dir
+# Target rules for target CMakeFiles/gateway.dir
 
 # All Build rule for target.
-CMakeFiles/lfserver.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target lfserver"
-.PHONY : CMakeFiles/lfserver.dir/all
+CMakeFiles/gateway.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target gateway"
+.PHONY : CMakeFiles/gateway.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lfserver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/whn/LFServer/build/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lfserver.dir/all
+CMakeFiles/gateway.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/whn/LFServer/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gateway.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/whn/LFServer/build/CMakeFiles 0
-.PHONY : CMakeFiles/lfserver.dir/rule
+.PHONY : CMakeFiles/gateway.dir/rule
 
 # Convenience name for target.
-lfserver: CMakeFiles/lfserver.dir/rule
-.PHONY : lfserver
+gateway: CMakeFiles/gateway.dir/rule
+.PHONY : gateway
 
 # codegen rule for target.
-CMakeFiles/lfserver.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target lfserver"
-.PHONY : CMakeFiles/lfserver.dir/codegen
+CMakeFiles/gateway.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Finished codegen for target gateway"
+.PHONY : CMakeFiles/gateway.dir/codegen
 
 # clean rule for target.
-CMakeFiles/lfserver.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lfserver.dir/build.make CMakeFiles/lfserver.dir/clean
-.PHONY : CMakeFiles/lfserver.dir/clean
+CMakeFiles/gateway.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/clean
+.PHONY : CMakeFiles/gateway.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
