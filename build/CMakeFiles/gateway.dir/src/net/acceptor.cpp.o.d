@@ -1,7 +1,7 @@
 CMakeFiles/gateway.dir/src/net/acceptor.cpp.o: \
- /home/whn/LFServer/src/net/acceptor.cpp /usr/include/stdc-predef.h \
- /home/whn/LFServer/include/net/acceptor.hpp \
- /home/whn/LFServer/include/net/channel.hpp \
+ /home/whn/LFGateway/src/net/acceptor.cpp /usr/include/stdc-predef.h \
+ /home/whn/LFGateway/include/net/acceptor.hpp \
+ /home/whn/LFGateway/include/net/channel.hpp \
  /usr/include/c++/14/functional \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
@@ -102,8 +102,8 @@ CMakeFiles/gateway.dir/src/net/acceptor.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
  /usr/include/x86_64-linux-gnu/bits/epoll.h \
- /home/whn/LFServer/include/base/nocopyable.hpp \
- /home/whn/LFServer/include/net/eventloop.hpp /usr/include/c++/14/atomic \
+ /home/whn/LFGateway/include/base/nocopyable.hpp \
+ /home/whn/LFGateway/include/net/eventloop.hpp /usr/include/c++/14/atomic \
  /usr/include/c++/14/bits/atomic_base.h \
  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
  /usr/include/c++/14/memory /usr/include/c++/14/bits/stl_tempbuf.h \

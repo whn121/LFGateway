@@ -1,6 +1,6 @@
 CMakeFiles/gateway.dir/src/net/eventloop.cpp.o: \
- /home/whn/LFServer/src/net/eventloop.cpp /usr/include/stdc-predef.h \
- /home/whn/LFServer/include/net/eventloop.hpp /usr/include/c++/14/atomic \
+ /home/whn/LFGateway/src/net/eventloop.cpp /usr/include/stdc-predef.h \
+ /home/whn/LFGateway/include/net/eventloop.hpp /usr/include/c++/14/atomic \
  /usr/include/c++/14/bits/version.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
@@ -168,8 +168,8 @@ CMakeFiles/gateway.dir/src/net/eventloop.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/epoll.h \
- /home/whn/LFServer/include/base/nocopyable.hpp \
- /home/whn/LFServer/include/net/channel.hpp /usr/include/c++/14/cassert \
+ /home/whn/LFGateway/include/base/nocopyable.hpp \
+ /home/whn/LFGateway/include/net/channel.hpp /usr/include/c++/14/cassert \
  /usr/include/assert.h /usr/include/c++/14/cstring /usr/include/string.h \
  /usr/include/strings.h /usr/include/x86_64-linux-gnu/sys/eventfd.h \
  /usr/include/x86_64-linux-gnu/bits/eventfd.h /usr/include/unistd.h \

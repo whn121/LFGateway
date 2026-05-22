@@ -1,7 +1,7 @@
 CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o: \
- /home/whn/LFServer/src/net/tcp_server.cpp /usr/include/stdc-predef.h \
- /home/whn/LFServer/include/net/tcp_server.hpp \
- /home/whn/LFServer/include/net/eventloop.hpp /usr/include/c++/14/atomic \
+ /home/whn/LFGateway/src/net/tcp_server.cpp /usr/include/stdc-predef.h \
+ /home/whn/LFGateway/include/net/tcp_server.hpp \
+ /home/whn/LFGateway/include/net/eventloop.hpp /usr/include/c++/14/atomic \
  /usr/include/c++/14/bits/version.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
@@ -169,9 +169,9 @@ CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/epoll.h \
- /home/whn/LFServer/include/base/nocopyable.hpp \
- /home/whn/LFServer/include/net/acceptor.hpp \
- /home/whn/LFServer/include/net/channel.hpp /usr/include/netinet/in.h \
+ /home/whn/LFGateway/include/base/nocopyable.hpp \
+ /home/whn/LFGateway/include/net/acceptor.hpp \
+ /home/whn/LFGateway/include/net/channel.hpp /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -183,7 +183,7 @@ CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o: \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/in.h \
- /home/whn/LFServer/include/net/tcp_connection.hpp \
+ /home/whn/LFGateway/include/net/tcp_connection.hpp \
  /usr/include/c++/14/string /usr/include/c++/14/bits/char_traits.h \
  /usr/include/c++/14/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h \
@@ -208,7 +208,7 @@ CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o: \
  /usr/include/c++/14/map /usr/include/c++/14/bits/stl_tree.h \
  /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
- /home/whn/LFServer/include/log/async_logger.hpp \
+ /home/whn/LFGateway/include/log/async_logger.hpp \
  /usr/include/c++/14/condition_variable /usr/include/c++/14/fstream \
  /usr/include/c++/14/istream /usr/include/c++/14/ios \
  /usr/include/c++/14/bits/ios_base.h \

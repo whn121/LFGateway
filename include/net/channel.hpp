@@ -34,6 +34,9 @@ public:
     int index() const { return index_; }
     void set_index(int idx) { index_ = idx; }
 
+    void markAsRemoved() { removed_ = true; }
+    bool isRemoved() const { return removed_; }
+
     EventLoop* ownerLoop() const { return loop_; }
 
 private:
@@ -44,6 +47,7 @@ private:
     int events_;
     int revents_;
     int index_;
+    bool removed_ = false;
 
     EventCallback readCallback_;
     EventCallback writeCallback_;

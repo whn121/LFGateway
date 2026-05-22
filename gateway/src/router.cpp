@@ -23,9 +23,10 @@ bool Router::loadFromMySQL() {
     MYSQL_ROW row;
     while ((row = mysql_fetch_row(result))) {
         RouteRule rule;
+        // 安全处理每一个可能为 NULL 的字段
         rule.id          = row[0] ? std::stoi(row[0]) : 0;
-        rule.pathPattern = row[1] ? row[1] : "";
-        rule.targetHost  = row[2] ? row[2] : "";
+        rule.pathPattern = row[1] ? std::string(row[1]) : "";
+        rule.targetHost  = row[2] ? std::string(row[2]) : "";
         rule.targetPort  = row[3] ? std::stoi(row[3]) : 0;
         rule.needAuth    = row[4] ? (std::stoi(row[4]) != 0) : true;
         rule.rateLimit   = row[5] ? std::stoi(row[5]) : 0;

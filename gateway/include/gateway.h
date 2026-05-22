@@ -11,6 +11,8 @@
 #include "ratelimit_plugin.h"
 #include "log_consumer.h"
 #include "mgmt_handler.h"
+#include "stream_writer.h"
+#include "distributed_rate_limiter.h"
 #include <memory>
 #include <atomic>
 
@@ -28,6 +30,10 @@ public:
 
     std::string getStatsJson();
     bool addRoute(const std::string& json);
+     std::string getHealthJson();
+     std::string getRouteListJson();
+     bool deleteRoute(const std::string& json);
+     std::string getLogsJson(const std::string& params);
 
 private:
     void onApiRequest(const std::shared_ptr<TcpConnection>& conn, std::string& buf);
@@ -39,6 +45,7 @@ private:
     uint16_t apiPort_, mgmtPort_;
     size_t threadNum_;
 
+    std::unique_ptr<StreamWriter> streamWriter_;
     std::unique_ptr<TcpServer> apiServer_;
     std::unique_ptr<TcpServer> mgmtServer_;
     std::unique_ptr<ThreadPool> threadPool_;
@@ -50,6 +57,7 @@ private:
     std::unique_ptr<RateLimitPlugin> rateLimiter_;
     std::unique_ptr<LogConsumer> logConsumer_;
     std::unique_ptr<MgmtHandler> mgmtHandler_;
+    std::unique_ptr<DistributedRateLimiter> distributedLimiter_;
 
     std::atomic<uint64_t> totalRequests_{0};
     std::atomic<uint64_t> totalLatencyUs_{0};

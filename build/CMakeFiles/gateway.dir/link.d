@@ -9,6 +9,7 @@ gateway: \
   CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o \
   CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o \
   CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o \
+  CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.o \
   CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o \
   CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o \
   CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o \
@@ -16,6 +17,7 @@ gateway: \
   CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o \
   CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o \
   CMakeFiles/gateway.dir/gateway/src/router.cpp.o \
+  CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libpthread.a \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libmysqlclient.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libhiredis.so \
@@ -73,6 +75,8 @@ CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o:
 
 CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o:
 
+CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.o:
+
 CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o:
 
 CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o:
@@ -86,6 +90,8 @@ CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o:
 CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o:
 
 CMakeFiles/gateway.dir/gateway/src/router.cpp.o:
+
+CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libpthread.a:
 

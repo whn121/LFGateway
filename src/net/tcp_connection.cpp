@@ -4,10 +4,8 @@
 #include <errno.h>
 
 TcpConnection::TcpConnection(EventLoop* loop, int sockfd, const std::string& name)
-    : loop_(loop), sockfd_(sockfd), name_(name), channel_(loop, sockfd) {
-    channel_.setReadCallback(std::bind(&TcpConnection::handleRead, this));
-    channel_.setWriteCallback(std::bind(&TcpConnection::handleWrite, this));
-    channel_.setCloseCallback(std::bind(&TcpConnection::handleClose, this));
+    : loop_(loop), sockfd_(sockfd), name_(name), channel_(loop, sockfd)
+{
     AsyncLogger::instance().log("[INFO] TcpConnection created: " + name_);
 }
 
@@ -20,15 +18,20 @@ TcpConnection::~TcpConnection() {
 }
 
 void TcpConnection::connectEstablished() {
+    auto self = shared_from_this();
+    channel_.setReadCallback([self] { self->handleRead(); });
+    channel_.setWriteCallback([self] { self->handleWrite(); });
+    channel_.setCloseCallback([self] { self->handleClose(); });
     channel_.enableReading();
     if (connectionCallback_) {
-        connectionCallback_(shared_from_this());
+        connectionCallback_(self);
     }
 }
 
 void TcpConnection::connectDestroyed() {
     if (channel_.index() >= 0) {
         channel_.disableAll();
+        channel_.markAsRemoved();
     }
 }
 
@@ -36,16 +39,15 @@ void TcpConnection::send(const std::string& message) {
     if (loop_->isInLoopThread()) {
         sendInLoop(message);
     } else {
-        loop_->runInLoop([this, message] { sendInLoop(message); });
+        auto self = shared_from_this();
+        loop_->runInLoop([self, message] { self->sendInLoop(message); });
     }
 }
 
 void TcpConnection::sendInLoop(const std::string& message) {
-    if (sockfd_ < 0) {
-        // 连接已关闭，不操作
-        AsyncLogger::instance().log("[WARN] sendInLoop on closed connection: " + name_);
-        return;
-    }
+    // 核心保护：如果连接已关闭或 Channel 已被移除，直接丢弃数据
+    if (sockfd_ < 0 || channel_.isRemoved()) return;
+    
     outputBuffer_ += message;
     if (!channel_.isWriting()) {
         channel_.enableWriting();
@@ -53,6 +55,8 @@ void TcpConnection::sendInLoop(const std::string& message) {
 }
 
 void TcpConnection::handleRead() {
+    if (sockfd_ < 0 || channel_.isRemoved()) return;
+    
     char buf[65536];
     ssize_t n = ::read(sockfd_, buf, sizeof(buf));
     if (n > 0) {
@@ -72,7 +76,8 @@ void TcpConnection::handleRead() {
 }
 
 void TcpConnection::handleWrite() {
-    if (sockfd_ < 0) return;
+    if (sockfd_ < 0 || channel_.isRemoved()) return;
+    
     if (channel_.isWriting()) {
         ssize_t n = ::write(sockfd_, outputBuffer_.data(), outputBuffer_.size());
         if (n > 0) {
@@ -86,24 +91,29 @@ void TcpConnection::handleWrite() {
             if (errno != EAGAIN && errno != EWOULDBLOCK) {
                 if (errno == EBADF || errno == EPIPE) {
                     AsyncLogger::instance().log("[WARN] write failed, fd closed: " + name_);
-                    handleClose();
                 } else {
                     AsyncLogger::instance().log("[ERROR] write error on " + name_);
-                    handleClose();
                 }
+                handleClose();
             }
         }
     }
 }
 
 void TcpConnection::handleClose() {
+    if (sockfd_ < 0) return;
+    
     AsyncLogger::instance().log("[INFO] Connection closed: " + name_);
-    if (sockfd_ >= 0) {
-        channel_.disableAll();
-        if (closeCallback_) {
-            closeCallback_(shared_from_this());
-        }
-        ::close(sockfd_);
-        sockfd_ = -1;
+    
+    // 第一步：从 epoll 移除并标记为已删除，阻止任何新操作
+    channel_.remove();
+    
+    // 第二步：安全地通知上层
+    if (closeCallback_) {
+        closeCallback_(shared_from_this());
     }
+    
+    // 第三步：关闭 fd 并标记为无效
+    ::close(sockfd_);
+    sockfd_ = -1;
 }

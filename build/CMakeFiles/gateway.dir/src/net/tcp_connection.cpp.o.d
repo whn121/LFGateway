@@ -1,7 +1,8 @@
 CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o: \
- /home/whn/LFServer/src/net/tcp_connection.cpp /usr/include/stdc-predef.h \
- /home/whn/LFServer/include/net/tcp_connection.hpp \
- /home/whn/LFServer/include/net/channel.hpp \
+ /home/whn/LFGateway/src/net/tcp_connection.cpp \
+ /usr/include/stdc-predef.h \
+ /home/whn/LFGateway/include/net/tcp_connection.hpp \
+ /home/whn/LFGateway/include/net/channel.hpp \
  /usr/include/c++/14/functional \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
@@ -102,8 +103,8 @@ CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
  /usr/include/x86_64-linux-gnu/bits/epoll.h \
- /home/whn/LFServer/include/base/nocopyable.hpp \
- /home/whn/LFServer/include/net/eventloop.hpp /usr/include/c++/14/atomic \
+ /home/whn/LFGateway/include/base/nocopyable.hpp \
+ /home/whn/LFGateway/include/net/eventloop.hpp /usr/include/c++/14/atomic \
  /usr/include/c++/14/bits/atomic_base.h \
  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
  /usr/include/c++/14/memory /usr/include/c++/14/bits/stl_tempbuf.h \
@@ -191,7 +192,7 @@ CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc /usr/include/c++/14/any \
- /home/whn/LFServer/include/log/async_logger.hpp \
+ /home/whn/LFGateway/include/log/async_logger.hpp \
  /usr/include/c++/14/condition_variable /usr/include/c++/14/fstream \
  /usr/include/c++/14/istream /usr/include/c++/14/ios \
  /usr/include/c++/14/bits/ios_base.h \

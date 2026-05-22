@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/whn/LFServer/include -I/home/whn/LFServer/gateway/include
+CXX_INCLUDES = -I/home/whn/LFGateway/include -I/home/whn/LFGateway/gateway/include
 
 CXX_FLAGS = -std=gnu++17
 

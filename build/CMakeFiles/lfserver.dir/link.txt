@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/lfserver.dir/link.d CMakeFiles/lfserver.dir/src/main.cpp.o CMakeFiles/lfserver.dir/src/net/acceptor.cpp.o CMakeFiles/lfserver.dir/src/net/channel.cpp.o CMakeFiles/lfserver.dir/src/net/eventloop.cpp.o CMakeFiles/lfserver.dir/src/net/tcp_connection.cpp.o CMakeFiles/lfserver.dir/src/net/tcp_server.cpp.o -o lfserver  -lpthread

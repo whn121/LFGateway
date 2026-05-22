@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/whn/LFServer
+CMAKE_SOURCE_DIR = /home/whn/LFGateway
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/whn/LFServer/build
+CMAKE_BINARY_DIR = /home/whn/LFGateway/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/whn/LFServer/build/CMakeFiles /home/whn/LFServer/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/whn/LFGateway/build/CMakeFiles /home/whn/LFGateway/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/whn/LFServer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/whn/LFGateway/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -152,6 +152,30 @@ gateway/src/auth_plugin.s: gateway/src/auth_plugin.cpp.s
 gateway/src/auth_plugin.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.s
 .PHONY : gateway/src/auth_plugin.cpp.s
+
+gateway/src/distributed_rate_limiter.o: gateway/src/distributed_rate_limiter.cpp.o
+.PHONY : gateway/src/distributed_rate_limiter.o
+
+# target to build an object file
+gateway/src/distributed_rate_limiter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.o
+.PHONY : gateway/src/distributed_rate_limiter.cpp.o
+
+gateway/src/distributed_rate_limiter.i: gateway/src/distributed_rate_limiter.cpp.i
+.PHONY : gateway/src/distributed_rate_limiter.i
+
+# target to preprocess a source file
+gateway/src/distributed_rate_limiter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.i
+.PHONY : gateway/src/distributed_rate_limiter.cpp.i
+
+gateway/src/distributed_rate_limiter.s: gateway/src/distributed_rate_limiter.cpp.s
+.PHONY : gateway/src/distributed_rate_limiter.s
+
+# target to generate assembly for a file
+gateway/src/distributed_rate_limiter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.s
+.PHONY : gateway/src/distributed_rate_limiter.cpp.s
 
 gateway/src/gateway.o: gateway/src/gateway.cpp.o
 .PHONY : gateway/src/gateway.o
@@ -321,6 +345,30 @@ gateway/src/router.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/router.cpp.s
 .PHONY : gateway/src/router.cpp.s
 
+gateway/src/stream_writer.o: gateway/src/stream_writer.cpp.o
+.PHONY : gateway/src/stream_writer.o
+
+# target to build an object file
+gateway/src/stream_writer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.o
+.PHONY : gateway/src/stream_writer.cpp.o
+
+gateway/src/stream_writer.i: gateway/src/stream_writer.cpp.i
+.PHONY : gateway/src/stream_writer.i
+
+# target to preprocess a source file
+gateway/src/stream_writer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.i
+.PHONY : gateway/src/stream_writer.cpp.i
+
+gateway/src/stream_writer.s: gateway/src/stream_writer.cpp.s
+.PHONY : gateway/src/stream_writer.s
+
+# target to generate assembly for a file
+gateway/src/stream_writer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.s
+.PHONY : gateway/src/stream_writer.cpp.s
+
 src/main_gateway.o: src/main_gateway.cpp.o
 .PHONY : src/main_gateway.o
 
@@ -477,6 +525,9 @@ help:
 	@echo "... gateway/src/auth_plugin.o"
 	@echo "... gateway/src/auth_plugin.i"
 	@echo "... gateway/src/auth_plugin.s"
+	@echo "... gateway/src/distributed_rate_limiter.o"
+	@echo "... gateway/src/distributed_rate_limiter.i"
+	@echo "... gateway/src/distributed_rate_limiter.s"
 	@echo "... gateway/src/gateway.o"
 	@echo "... gateway/src/gateway.i"
 	@echo "... gateway/src/gateway.s"
@@ -498,6 +549,9 @@ help:
 	@echo "... gateway/src/router.o"
 	@echo "... gateway/src/router.i"
 	@echo "... gateway/src/router.s"
+	@echo "... gateway/src/stream_writer.o"
+	@echo "... gateway/src/stream_writer.i"
+	@echo "... gateway/src/stream_writer.s"
 	@echo "... src/main_gateway.o"
 	@echo "... src/main_gateway.i"
 	@echo "... src/main_gateway.s"

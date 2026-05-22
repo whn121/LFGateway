@@ -42,7 +42,7 @@ void EventLoop::loop() {
     looping_ = true;
     quit_ = false;
 
-    events_.resize(16);
+    events_.resize(1024);
 
     while (!quit_) {
         int numEvents = ::epoll_wait(epollfd_, events_.data(), events_.size(), 10000);

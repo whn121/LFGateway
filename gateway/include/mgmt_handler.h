@@ -4,7 +4,7 @@
 #include <memory>
 #include <string>
 
-class TcpConnection; // 前向声明
+class TcpConnection;
 class Gateway;
 
 class MgmtHandler {
@@ -14,7 +14,10 @@ public:
 
 private:
     void handleStats(const std::shared_ptr<TcpConnection>& conn);
+    void handleRouteList(const std::shared_ptr<TcpConnection>& conn);
     void handleRouteAdd(const std::shared_ptr<TcpConnection>& conn, const std::string& body);
+    void handleRouteDelete(const std::shared_ptr<TcpConnection>& conn, const std::string& body);
+    void handleLogQuery(const std::shared_ptr<TcpConnection>& conn, const std::string& body);
     Gateway* gateway_;
 };
 

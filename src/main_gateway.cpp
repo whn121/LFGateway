@@ -17,7 +17,7 @@ int main() {
     EventLoop loop;
     g_loop = &loop;
 
-    Gateway gw(&loop, 8080, 8081, 4,
+    Gateway gw(&loop, 8080, 8081, 16,
                "localhost", "gateway", "gateway123", "lfgateway",
                "localhost", 6379);
     g_gw = &gw;

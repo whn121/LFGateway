@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/whn/LFServer
+CMAKE_SOURCE_DIR = /home/whn/LFGateway
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/whn/LFServer/build
+CMAKE_BINARY_DIR = /home/whn/LFGateway/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/gateway.dir/clean
 CMakeFiles/gateway.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target gateway"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target gateway"
 .PHONY : CMakeFiles/gateway.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gateway.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/whn/LFServer/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/whn/LFGateway/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gateway.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/whn/LFServer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/whn/LFGateway/build/CMakeFiles 0
 .PHONY : CMakeFiles/gateway.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ gateway: CMakeFiles/gateway.dir/rule
 # codegen rule for target.
 CMakeFiles/gateway.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Finished codegen for target gateway"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Finished codegen for target gateway"
 .PHONY : CMakeFiles/gateway.dir/codegen
 
 # clean rule for target.

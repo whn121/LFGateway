@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/whn/LFServer
+CMAKE_SOURCE_DIR = /home/whn/LFGateway
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/whn/LFServer/build
+CMAKE_BINARY_DIR = /home/whn/LFGateway/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gateway.dir/depend.make
@@ -73,200 +73,228 @@ CMakeFiles/gateway.dir/codegen:
 .PHONY : CMakeFiles/gateway.dir/codegen
 
 CMakeFiles/gateway.dir/src/main_gateway.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/src/main_gateway.cpp.o: /home/whn/LFServer/src/main_gateway.cpp
+CMakeFiles/gateway.dir/src/main_gateway.cpp.o: /home/whn/LFGateway/src/main_gateway.cpp
 CMakeFiles/gateway.dir/src/main_gateway.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gateway.dir/src/main_gateway.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/main_gateway.cpp.o -MF CMakeFiles/gateway.dir/src/main_gateway.cpp.o.d -o CMakeFiles/gateway.dir/src/main_gateway.cpp.o -c /home/whn/LFServer/src/main_gateway.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gateway.dir/src/main_gateway.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/main_gateway.cpp.o -MF CMakeFiles/gateway.dir/src/main_gateway.cpp.o.d -o CMakeFiles/gateway.dir/src/main_gateway.cpp.o -c /home/whn/LFGateway/src/main_gateway.cpp
 
 CMakeFiles/gateway.dir/src/main_gateway.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/src/main_gateway.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/src/main_gateway.cpp > CMakeFiles/gateway.dir/src/main_gateway.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/src/main_gateway.cpp > CMakeFiles/gateway.dir/src/main_gateway.cpp.i
 
 CMakeFiles/gateway.dir/src/main_gateway.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/main_gateway.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/src/main_gateway.cpp -o CMakeFiles/gateway.dir/src/main_gateway.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/src/main_gateway.cpp -o CMakeFiles/gateway.dir/src/main_gateway.cpp.s
 
 CMakeFiles/gateway.dir/src/net/acceptor.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/src/net/acceptor.cpp.o: /home/whn/LFServer/src/net/acceptor.cpp
+CMakeFiles/gateway.dir/src/net/acceptor.cpp.o: /home/whn/LFGateway/src/net/acceptor.cpp
 CMakeFiles/gateway.dir/src/net/acceptor.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gateway.dir/src/net/acceptor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/net/acceptor.cpp.o -MF CMakeFiles/gateway.dir/src/net/acceptor.cpp.o.d -o CMakeFiles/gateway.dir/src/net/acceptor.cpp.o -c /home/whn/LFServer/src/net/acceptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gateway.dir/src/net/acceptor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/net/acceptor.cpp.o -MF CMakeFiles/gateway.dir/src/net/acceptor.cpp.o.d -o CMakeFiles/gateway.dir/src/net/acceptor.cpp.o -c /home/whn/LFGateway/src/net/acceptor.cpp
 
 CMakeFiles/gateway.dir/src/net/acceptor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/src/net/acceptor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/src/net/acceptor.cpp > CMakeFiles/gateway.dir/src/net/acceptor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/src/net/acceptor.cpp > CMakeFiles/gateway.dir/src/net/acceptor.cpp.i
 
 CMakeFiles/gateway.dir/src/net/acceptor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/net/acceptor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/src/net/acceptor.cpp -o CMakeFiles/gateway.dir/src/net/acceptor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/src/net/acceptor.cpp -o CMakeFiles/gateway.dir/src/net/acceptor.cpp.s
 
 CMakeFiles/gateway.dir/src/net/channel.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/src/net/channel.cpp.o: /home/whn/LFServer/src/net/channel.cpp
+CMakeFiles/gateway.dir/src/net/channel.cpp.o: /home/whn/LFGateway/src/net/channel.cpp
 CMakeFiles/gateway.dir/src/net/channel.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gateway.dir/src/net/channel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/net/channel.cpp.o -MF CMakeFiles/gateway.dir/src/net/channel.cpp.o.d -o CMakeFiles/gateway.dir/src/net/channel.cpp.o -c /home/whn/LFServer/src/net/channel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gateway.dir/src/net/channel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/net/channel.cpp.o -MF CMakeFiles/gateway.dir/src/net/channel.cpp.o.d -o CMakeFiles/gateway.dir/src/net/channel.cpp.o -c /home/whn/LFGateway/src/net/channel.cpp
 
 CMakeFiles/gateway.dir/src/net/channel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/src/net/channel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/src/net/channel.cpp > CMakeFiles/gateway.dir/src/net/channel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/src/net/channel.cpp > CMakeFiles/gateway.dir/src/net/channel.cpp.i
 
 CMakeFiles/gateway.dir/src/net/channel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/net/channel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/src/net/channel.cpp -o CMakeFiles/gateway.dir/src/net/channel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/src/net/channel.cpp -o CMakeFiles/gateway.dir/src/net/channel.cpp.s
 
 CMakeFiles/gateway.dir/src/net/eventloop.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/src/net/eventloop.cpp.o: /home/whn/LFServer/src/net/eventloop.cpp
+CMakeFiles/gateway.dir/src/net/eventloop.cpp.o: /home/whn/LFGateway/src/net/eventloop.cpp
 CMakeFiles/gateway.dir/src/net/eventloop.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gateway.dir/src/net/eventloop.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/net/eventloop.cpp.o -MF CMakeFiles/gateway.dir/src/net/eventloop.cpp.o.d -o CMakeFiles/gateway.dir/src/net/eventloop.cpp.o -c /home/whn/LFServer/src/net/eventloop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gateway.dir/src/net/eventloop.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/net/eventloop.cpp.o -MF CMakeFiles/gateway.dir/src/net/eventloop.cpp.o.d -o CMakeFiles/gateway.dir/src/net/eventloop.cpp.o -c /home/whn/LFGateway/src/net/eventloop.cpp
 
 CMakeFiles/gateway.dir/src/net/eventloop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/src/net/eventloop.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/src/net/eventloop.cpp > CMakeFiles/gateway.dir/src/net/eventloop.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/src/net/eventloop.cpp > CMakeFiles/gateway.dir/src/net/eventloop.cpp.i
 
 CMakeFiles/gateway.dir/src/net/eventloop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/net/eventloop.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/src/net/eventloop.cpp -o CMakeFiles/gateway.dir/src/net/eventloop.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/src/net/eventloop.cpp -o CMakeFiles/gateway.dir/src/net/eventloop.cpp.s
 
 CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o: /home/whn/LFServer/src/net/tcp_connection.cpp
+CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o: /home/whn/LFGateway/src/net/tcp_connection.cpp
 CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o -MF CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o.d -o CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o -c /home/whn/LFServer/src/net/tcp_connection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o -MF CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o.d -o CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o -c /home/whn/LFGateway/src/net/tcp_connection.cpp
 
 CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/src/net/tcp_connection.cpp > CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/src/net/tcp_connection.cpp > CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.i
 
 CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/src/net/tcp_connection.cpp -o CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/src/net/tcp_connection.cpp -o CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.s
 
 CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o: /home/whn/LFServer/src/net/tcp_server.cpp
+CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o: /home/whn/LFGateway/src/net/tcp_server.cpp
 CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o -MF CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o.d -o CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o -c /home/whn/LFServer/src/net/tcp_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o -MF CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o.d -o CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o -c /home/whn/LFGateway/src/net/tcp_server.cpp
 
 CMakeFiles/gateway.dir/src/net/tcp_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/src/net/tcp_server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/src/net/tcp_server.cpp > CMakeFiles/gateway.dir/src/net/tcp_server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/src/net/tcp_server.cpp > CMakeFiles/gateway.dir/src/net/tcp_server.cpp.i
 
 CMakeFiles/gateway.dir/src/net/tcp_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/net/tcp_server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/src/net/tcp_server.cpp -o CMakeFiles/gateway.dir/src/net/tcp_server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/src/net/tcp_server.cpp -o CMakeFiles/gateway.dir/src/net/tcp_server.cpp.s
 
 CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o: /home/whn/LFServer/gateway/src/auth_plugin.cpp
+CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o: /home/whn/LFGateway/gateway/src/auth_plugin.cpp
 CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o -c /home/whn/LFServer/gateway/src/auth_plugin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o -c /home/whn/LFGateway/gateway/src/auth_plugin.cpp
 
 CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/gateway/src/auth_plugin.cpp > CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/gateway/src/auth_plugin.cpp > CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.i
 
 CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/gateway/src/auth_plugin.cpp -o CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/gateway/src/auth_plugin.cpp -o CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.s
+
+CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.o: CMakeFiles/gateway.dir/flags.make
+CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.o: /home/whn/LFGateway/gateway/src/distributed_rate_limiter.cpp
+CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.o -c /home/whn/LFGateway/gateway/src/distributed_rate_limiter.cpp
+
+CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/gateway/src/distributed_rate_limiter.cpp > CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.i
+
+CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/gateway/src/distributed_rate_limiter.cpp -o CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.s
 
 CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o: /home/whn/LFServer/gateway/src/gateway.cpp
+CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o: /home/whn/LFGateway/gateway/src/gateway.cpp
 CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o -c /home/whn/LFServer/gateway/src/gateway.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o -c /home/whn/LFGateway/gateway/src/gateway.cpp
 
 CMakeFiles/gateway.dir/gateway/src/gateway.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/gateway/src/gateway.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/gateway/src/gateway.cpp > CMakeFiles/gateway.dir/gateway/src/gateway.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/gateway/src/gateway.cpp > CMakeFiles/gateway.dir/gateway/src/gateway.cpp.i
 
 CMakeFiles/gateway.dir/gateway/src/gateway.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/gateway/src/gateway.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/gateway/src/gateway.cpp -o CMakeFiles/gateway.dir/gateway/src/gateway.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/gateway/src/gateway.cpp -o CMakeFiles/gateway.dir/gateway/src/gateway.cpp.s
 
 CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o: /home/whn/LFServer/gateway/src/log_consumer.cpp
+CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o: /home/whn/LFGateway/gateway/src/log_consumer.cpp
 CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o -c /home/whn/LFServer/gateway/src/log_consumer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o -c /home/whn/LFGateway/gateway/src/log_consumer.cpp
 
 CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/gateway/src/log_consumer.cpp > CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/gateway/src/log_consumer.cpp > CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.i
 
 CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/gateway/src/log_consumer.cpp -o CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/gateway/src/log_consumer.cpp -o CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.s
 
 CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o: /home/whn/LFServer/gateway/src/mgmt_handler.cpp
+CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o: /home/whn/LFGateway/gateway/src/mgmt_handler.cpp
 CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o -c /home/whn/LFServer/gateway/src/mgmt_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o -c /home/whn/LFGateway/gateway/src/mgmt_handler.cpp
 
 CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/gateway/src/mgmt_handler.cpp > CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/gateway/src/mgmt_handler.cpp > CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.i
 
 CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/gateway/src/mgmt_handler.cpp -o CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/gateway/src/mgmt_handler.cpp -o CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.s
 
 CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o: /home/whn/LFServer/gateway/src/mysql_pool.cpp
+CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o: /home/whn/LFGateway/gateway/src/mysql_pool.cpp
 CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o -c /home/whn/LFServer/gateway/src/mysql_pool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o -c /home/whn/LFGateway/gateway/src/mysql_pool.cpp
 
 CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/gateway/src/mysql_pool.cpp > CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/gateway/src/mysql_pool.cpp > CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.i
 
 CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/gateway/src/mysql_pool.cpp -o CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/gateway/src/mysql_pool.cpp -o CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.s
 
 CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o: /home/whn/LFServer/gateway/src/ratelimit_plugin.cpp
+CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o: /home/whn/LFGateway/gateway/src/ratelimit_plugin.cpp
 CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o -c /home/whn/LFServer/gateway/src/ratelimit_plugin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o -c /home/whn/LFGateway/gateway/src/ratelimit_plugin.cpp
 
 CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/gateway/src/ratelimit_plugin.cpp > CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/gateway/src/ratelimit_plugin.cpp > CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.i
 
 CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/gateway/src/ratelimit_plugin.cpp -o CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/gateway/src/ratelimit_plugin.cpp -o CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.s
 
 CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o: /home/whn/LFServer/gateway/src/redis_client.cpp
+CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o: /home/whn/LFGateway/gateway/src/redis_client.cpp
 CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o -c /home/whn/LFServer/gateway/src/redis_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o -c /home/whn/LFGateway/gateway/src/redis_client.cpp
 
 CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/gateway/src/redis_client.cpp > CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/gateway/src/redis_client.cpp > CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.i
 
 CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/gateway/src/redis_client.cpp -o CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/gateway/src/redis_client.cpp -o CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.s
 
 CMakeFiles/gateway.dir/gateway/src/router.cpp.o: CMakeFiles/gateway.dir/flags.make
-CMakeFiles/gateway.dir/gateway/src/router.cpp.o: /home/whn/LFServer/gateway/src/router.cpp
+CMakeFiles/gateway.dir/gateway/src/router.cpp.o: /home/whn/LFGateway/gateway/src/router.cpp
 CMakeFiles/gateway.dir/gateway/src/router.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gateway.dir/gateway/src/router.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/router.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/router.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/router.cpp.o -c /home/whn/LFServer/gateway/src/router.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/gateway.dir/gateway/src/router.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/router.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/router.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/router.cpp.o -c /home/whn/LFGateway/gateway/src/router.cpp
 
 CMakeFiles/gateway.dir/gateway/src/router.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/gateway/src/router.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFServer/gateway/src/router.cpp > CMakeFiles/gateway.dir/gateway/src/router.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/gateway/src/router.cpp > CMakeFiles/gateway.dir/gateway/src/router.cpp.i
 
 CMakeFiles/gateway.dir/gateway/src/router.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/gateway/src/router.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFServer/gateway/src/router.cpp -o CMakeFiles/gateway.dir/gateway/src/router.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/gateway/src/router.cpp -o CMakeFiles/gateway.dir/gateway/src/router.cpp.s
+
+CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.o: CMakeFiles/gateway.dir/flags.make
+CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.o: /home/whn/LFGateway/gateway/src/stream_writer.cpp
+CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.o -MF CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.o.d -o CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.o -c /home/whn/LFGateway/gateway/src/stream_writer.cpp
+
+CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whn/LFGateway/gateway/src/stream_writer.cpp > CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.i
+
+CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whn/LFGateway/gateway/src/stream_writer.cpp -o CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.s
 
 # Object files for target gateway
 gateway_OBJECTS = \
@@ -277,13 +305,15 @@ gateway_OBJECTS = \
 "CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o" \
 "CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o" \
 "CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o" \
+"CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.o" \
 "CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o" \
 "CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o" \
 "CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o" \
 "CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o" \
 "CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o" \
 "CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o" \
-"CMakeFiles/gateway.dir/gateway/src/router.cpp.o"
+"CMakeFiles/gateway.dir/gateway/src/router.cpp.o" \
+"CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.o"
 
 # External object files for target gateway
 gateway_EXTERNAL_OBJECTS =
@@ -295,6 +325,7 @@ gateway: CMakeFiles/gateway.dir/src/net/eventloop.cpp.o
 gateway: CMakeFiles/gateway.dir/src/net/tcp_connection.cpp.o
 gateway: CMakeFiles/gateway.dir/src/net/tcp_server.cpp.o
 gateway: CMakeFiles/gateway.dir/gateway/src/auth_plugin.cpp.o
+gateway: CMakeFiles/gateway.dir/gateway/src/distributed_rate_limiter.cpp.o
 gateway: CMakeFiles/gateway.dir/gateway/src/gateway.cpp.o
 gateway: CMakeFiles/gateway.dir/gateway/src/log_consumer.cpp.o
 gateway: CMakeFiles/gateway.dir/gateway/src/mgmt_handler.cpp.o
@@ -302,10 +333,11 @@ gateway: CMakeFiles/gateway.dir/gateway/src/mysql_pool.cpp.o
 gateway: CMakeFiles/gateway.dir/gateway/src/ratelimit_plugin.cpp.o
 gateway: CMakeFiles/gateway.dir/gateway/src/redis_client.cpp.o
 gateway: CMakeFiles/gateway.dir/gateway/src/router.cpp.o
+gateway: CMakeFiles/gateway.dir/gateway/src/stream_writer.cpp.o
 gateway: CMakeFiles/gateway.dir/build.make
 gateway: CMakeFiles/gateway.dir/compiler_depend.ts
 gateway: CMakeFiles/gateway.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/whn/LFServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable gateway"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/whn/LFGateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable gateway"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gateway.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -317,6 +349,6 @@ CMakeFiles/gateway.dir/clean:
 .PHONY : CMakeFiles/gateway.dir/clean
 
 CMakeFiles/gateway.dir/depend:
-	cd /home/whn/LFServer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/whn/LFServer /home/whn/LFServer /home/whn/LFServer/build /home/whn/LFServer/build /home/whn/LFServer/build/CMakeFiles/gateway.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/whn/LFGateway/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/whn/LFGateway /home/whn/LFGateway /home/whn/LFGateway/build /home/whn/LFGateway/build /home/whn/LFGateway/build/CMakeFiles/gateway.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/gateway.dir/depend
 
